@@ -45,7 +45,7 @@ foreach (var sub in subs)
         {
             if (!wordsAndCount.ContainsKey(sub.ToLower()))
             {
-                wordsAndCount.TryAdd(sub.ToLower(), 1);
+                wordsAndCount.Add(sub.ToLower(), 1);
             }
             else
             {
