@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestTask1", "TestTask1\TestTask1.csproj", "{180B55E0-E28D-4F6B-AC89-424DD5C784F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTask2", "TestTask2\TestTask2.csproj", "{DBC24E12-C285-4D0F-B3D2-4BA1B3F7BC70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTask3", "TestTask3\TestTask3.csproj", "{054784F9-C6BB-4331-BB1B-F0B59040EA61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{180B55E0-E28D-4F6B-AC89-424DD5C784F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{180B55E0-E28D-4F6B-AC89-424DD5C784F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{180B55E0-E28D-4F6B-AC89-424DD5C784F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{180B55E0-E28D-4F6B-AC89-424DD5C784F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBC24E12-C285-4D0F-B3D2-4BA1B3F7BC70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBC24E12-C285-4D0F-B3D2-4BA1B3F7BC70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBC24E12-C285-4D0F-B3D2-4BA1B3F7BC70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBC24E12-C285-4D0F-B3D2-4BA1B3F7BC70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{054784F9-C6BB-4331-BB1B-F0B59040EA61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{054784F9-C6BB-4331-BB1B-F0B59040EA61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{054784F9-C6BB-4331-BB1B-F0B59040EA61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{054784F9-C6BB-4331-BB1B-F0B59040EA61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BADBB019-4B4E-4A3E-9FF3-6E1292C33817}
+	EndGlobalSection
+EndGlobal
