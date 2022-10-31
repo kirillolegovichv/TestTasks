@@ -19,8 +19,8 @@ string[] subs = readText.Split(' ', ',', '.', '\t', '\n', '-', '[', ']', '(', ')
 
 #region MAIN WORK
 stopwatchParallel.Start();
-Parallel.ForEach<string>(subs, new ParallelOptions { MaxDegreeOfParallelism = 1500 },
-    (sub) =>
+Parallel.ForEach<string>(subs, new ParallelOptions { MaxDegreeOfParallelism = 5 },
+    (sub) => 
     {
         if (sub != "" && sub != " " && sub != "\n" && sub != "\r")
         {
@@ -39,18 +39,21 @@ stopwatchParallel.Stop();
 stopwatch.Start();
 foreach (var sub in subs)
 {
-    if (sub != "" && sub != " " && sub != "\n" && sub != "\r")
+    Task task = Task.Run(() =>
     {
-        if (!wordsAndCount.ContainsKey(sub.ToLower()))
+        if (sub != "" && sub != " " && sub != "\n" && sub != "\r")
         {
-            wordsAndCount.Add(sub.ToLower(), 1);
+            if (!wordsAndTheirCount.ContainsKey(sub.ToLower()))
+            {
+                wordsAndTheirCount.TryAdd(sub.ToLower(), 1);
+            }
+            else
+            {
+                wordsAndTheirCount[sub.ToLower()]++;
+            }
         }
-        else
-        {
-            wordsAndCount[sub.ToLower()]++;
-        }
-
-    }
+    });
+    task.Wait();
 }
 stopwatch.Stop();
 #endregion
